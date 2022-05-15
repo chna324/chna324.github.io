@@ -1,0 +1,119 @@
+@import url(normalize.min.css);
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+:root{
+    --title-ff:'Noto Sans KR', sans-serif;
+    --body-fz:1rem;
+    --line-height:27px;
+    --primary-c:#e52c60;
+    --secondary-c:#a6a4a4;
+    --white:#fff;
+    --body-tc:#595858;
+    --title-tc:#403f3f;
+}
+
+/*
+typography
+*/
+
+body{
+    font-family: var(--title-ff);
+    font-size: var(--body-fz);
+    line-height: var(--line-height);
+    color: var(--body-tc);
+    /* background: var(--secondary-c); */
+}
+h1,h2,h3,h4,h5{
+    color: var(--title-tc);
+}
+.main_tt{
+    font-size: calc(var(--body-fz)*2.25);
+    font-weight: 700;
+}
+.sub_tt{
+    font-size: calc(var(--body-fz)*1.5);
+    font-weight: 400;
+}
+.menu_txt{
+    font-size: calc(var(--body-fz)*1.32);
+    font-weight: 400;
+    color: var(--body-tc);
+}
+.menu_txt:hover{
+    font-weight: 700;
+    color: var(--primary-c);
+}
+.content_txt{
+    font-size: calc(var(--body-fz)*1.125);
+    color: var(--body-tc);
+}
+em{
+    color: var(--primary-c);
+}
+.link{
+    color: var(--primary-c);
+    text-decoration: underline;
+}
+/*
+color
+*/
+.primary_bg{
+    background: var(--primary-c);
+}
+.secondary_bg{
+    background: var(--secondary-c);
+}
+.dark_c_bg{
+    background: var(--body-tc);
+}
+.w_color{
+    color: var(--white);
+}
+.primary_color{
+    color: var(--primary-c);
+}
+.secondary_color{
+    color: var(--secondary-c);
+}
+.dark_text_color{
+    color: var(--title-tc);
+}
+.light_text_color{
+    color: var(--body-tc);
+}
+/*
+buttons
+*/
+.btn{
+    display: inline-block;
+    font-size: var(--body-fz);
+    border-radius: 20px;
+    vertical-align: bottom;
+}
+.primary.btn{
+    border:2px solid var(--white);
+    height: 40px;
+    line-height: 40px;
+    font-family: var(--title-ff);
+    font-weight: 700;
+    padding: 0 20px;
+    transition: 0.4s;
+}
+.primary.btn:hover{
+    background: var(--primary-c);
+}
+.secondary.btn{
+    border:2px solid var(--secondary-c);
+    height: 40px;
+    line-height: 40px;
+    font-family: var(--title-ff);
+    font-weight: 700;
+    padding: 0 20px;
+    transition: 0.4s;
+}
+.secondary.btn:hover{
+    border-color: var(--body-tc);
+    background: var(--body-tc);
+    color: var(--white);
+}
