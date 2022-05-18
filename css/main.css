@@ -1,4 +1,29 @@
 @import url(common.css);
+/* Header */
+header{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right:0;
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header div nav{
+    display: flex;
+    gap: 84px;
+}
+header div nav .main_menu{
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+}
+header div nav ul li .submenu{
+    display: none;
+}
+
 
 /* Main Slide */
 .main_slide{
@@ -50,6 +75,9 @@
 .main_slide li div .slide_tt{
     font-size: calc(var(--body-fz)*3.375);
     font-weight: 700;
+    line-height: calc(var(--line-height)*3);
+}
+.main_slide li div .main_tt{
     line-height: calc(var(--line-height)*2);
     margin-bottom: var(--line-height);
 }
