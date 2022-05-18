@@ -11,6 +11,7 @@
     --white:#fff;
     --body-tc:#595858;
     --title-tc:#403f3f;
+    --con-width:1296px;
 }
 
 /*
@@ -116,4 +117,9 @@ buttons
     border-color: var(--body-tc);
     background: var(--body-tc);
     color: var(--white);
+}
+/* Layout */
+.container{
+    width: var(--con-width);
+    margin:0 auto; 
 }
