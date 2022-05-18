@@ -5,23 +5,33 @@ header{
     z-index: 1;
     left: 0;
     right:0;
+    padding: 27px 0;
 }
 header div{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header div nav{
+header nav{
     display: flex;
     gap: 84px;
 }
-header div nav .main_menu{
+header nav ul{
     display: flex;
-    justify-content: space-between;
     gap:30px;
 }
-header div nav ul li .submenu{
+header nav ul li .submenu{
     display: none;
+}
+header nav ul li a{
+    color: var(--white);
+}
+.logo a{
+    width: 272px;
+    height: 54px;
+    background: url(../img/logo.png) no-repeat;
+    display: block;
+    text-indent: -9999em;
 }
 
 

@@ -41,10 +41,10 @@ h1,h2,h3,h4,h5{
     font-weight: 400;
     color: var(--body-tc);
 }
-.menu_txt:hover{
+/* .menu_txt:hover{
     font-weight: 700;
     color: var(--primary-c);
-}
+} */
 .content_txt{
     font-size: calc(var(--body-fz)*1.125);
     color: var(--body-tc);
