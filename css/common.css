@@ -31,10 +31,13 @@ h1,h2,h3,h4,h5{
 .main_tt{
     font-size: calc(var(--body-fz)*2.25);
     font-weight: 700;
+    line-height: calc(var(--line-height)*2);
+    text-align: center;
 }
 .sub_tt{
     font-size: calc(var(--body-fz)*1.5);
     font-weight: 400;
+    text-align: center;
 }
 .menu_txt{
     font-size: calc(var(--body-fz)*1.32);
@@ -122,4 +125,7 @@ buttons
 .container{
     width: var(--con-width);
     margin:0 auto; 
+}
+.con_pd{
+    padding: calc(var(--line-height)*3) 0;
 }

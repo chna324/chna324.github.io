@@ -1,5 +1,7 @@
 @import url(common.css);
+
 /* Header */
+
 header{
     position: absolute;
     z-index: 1;
@@ -34,8 +36,8 @@ header nav ul li a{
     text-indent: -9999em;
 }
 
-
 /* Main Slide */
+
 .main_slide{
     height:100vh;
 }
@@ -59,6 +61,7 @@ header nav ul li a{
     justify-content: center;
     align-items: center;
     z-index: 0;
+    position: relative;
 }
 .main_slide li:after{
     content:'';
@@ -88,6 +91,173 @@ header nav ul li a{
     line-height: calc(var(--line-height)*3);
 }
 .main_slide li div .main_tt{
-    line-height: calc(var(--line-height)*2);
     margin-bottom: var(--line-height);
 }
+.slide_container li .content{
+    position: absolute;
+    left:22%;
+    bottom:260px;
+}
+.main_slide .controls a{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 27px;
+    height: 48px;
+    background-repeat: no-repeat;
+    text-indent: -9999em;
+}
+.main_slide .controls .prev{
+    background: url(../img/prev.png);
+    margin-left: -636px;
+}
+.main_slide .controls .next{
+    background: url(../img/next.png);
+    margin-left: 636px;
+}
+.indicator{
+    position: absolute;
+    bottom: var(--line-height);
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.indicator .pager{
+    display: flex;
+    gap: 20px;
+}
+.pager a{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--secondary-c);
+    text-indent: -9999em;
+}
+.pager a.active{
+    width: 80px;
+    border-radius: 12px;
+    background: #5f5f5f;
+}
+
+/* Brand & Products */
+
+.bnp .sub_tt{
+    margin-bottom: calc(var(--line-height)*2);
+}
+.bnp .product_list{
+    display: flex;
+    justify-content: center;
+    gap:24px;
+}
+.bnp .product_list li{
+    width: 413px;
+    height: 433px;
+    position: relative;
+    overflow: hidden;
+}
+.bnp .product_list li span{
+    position: absolute;
+    font-size: calc(var(--body-fz)*1.5);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--white);
+    z-index: 1;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: 0.4s;
+}
+.bnp .product_list li a{
+    width: 137px;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    left: 50%; bottom: 50%;
+    transform: translate(-50%,90%);
+    opacity: 0;
+    transition: 0.4s;
+}
+.bnp .product_list li img{
+    width: 413px;
+    height: 433px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    transition: 0.4s;
+}
+.bnp .product_list li:after{
+    content: '';
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background: rgba(0, 0, 0, .3);
+    opacity: 0;
+    transition: 0.4s;
+}
+.bnp .product_list li:hover img{
+    transform: scale(1.2);
+}
+.bnp .product_list li:hover span, .bnp .product_list li:hover a, .bnp .product_list li:hover:after{
+    opacity: 1;
+}
+
+/* ESG */
+.esg{
+    background: #f2f2f2;
+}
+.esg .sub_tt{
+    margin-bottom: calc(var(--line-height)*2);
+}
+.esg_list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.esg_list li{
+    width: 634px;
+    height: 243px;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    position: relative;
+    transition: 0.4s;
+}
+.esg_list li:nth-child(1){
+    background: url(../img/content1.jpg);
+}
+.esg_list li:nth-child(2){
+    background: url(../img/content2.jpg);
+}
+.esg_list li:nth-child(3){
+    background: url(../img/content3.jpg);
+}
+.esg_list li:nth-child(4){
+    background: url(../img/content4.jpg);
+}
+.esg_list li a{
+    font-size: calc(var(--body-fz)*1.5);
+    font-weight: 700;
+    color: var(--white);
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+.esg_list li a:after{
+    content: '';
+    width: 178px;
+    height: 2px;
+    background: var(--white);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+.esg_list li:hover{
+    filter: grayscale(0);
+}
+.esg_list li:hover a:after{
+    background: var(--primary-c);
+}
+/* R&D */
