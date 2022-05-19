@@ -261,3 +261,200 @@ header nav ul li a{
     background: var(--primary-c);
 }
 /* R&D */
+.rnd{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap:24px;
+    position: relative;
+}
+.rnd_text{
+    width:305px; 
+    position: relative;
+}
+.rnd_text h3, .rnd_text p{
+    text-align: left;
+}
+/* .rnd_text p:after{
+    content: '';
+    position: absolute;
+    width: 305px;
+    height: 2px;
+    background: var(--secondary-c);
+} */
+.rnd_text .controls a{
+    width: 18px;
+    height: 27px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    text-indent: -9999em;
+}
+.rnd_text .controls .prev{
+    background: url(../img/con_prev.png);
+}
+.rnd_text .controls .next{
+    background: url(../img/con_next.png);
+}
+.rnd_slide{
+    height:379px;
+    overflow: hidden;
+}
+.rnd_slide .slide_container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.rnd_slide .slide_container li{
+    width:305px;
+    height: 379px;
+    background-repeat: no-repeat;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    overflow: hidden;
+    position: relative;
+}
+.rnd_slide .slide_container li:nth-child(1){
+    background: url(../img/rnd_con1.jpg);
+}
+.rnd_slide .slide_container li:nth-child(2){
+    background: url(../img/rnd_con2.jpg);
+}
+.rnd_slide .slide_container li:nth-child(3){
+    background: url(../img/rnd_con3.jpg);
+}
+.rnd_slide .slide_container li:nth-child(4){
+    background: url(../img/rnd_con4.jpg);
+}
+.rnd_slide .slide_container li:nth-child(5){
+    background: url(../img/rnd_con5.jpg);
+}
+.rnd_slide .slide_container li:nth-child(6){
+    background: url(../img/rnd_con6.jpg);
+}
+.rnd_slide li a{
+    position: absolute;
+    width: 120px;
+    text-align: center;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    opacity: 0;
+    transition: 0.4s;
+}
+.rnd_slide li span{
+    color: var(--white);
+    font-size: calc(var(--body-fz)*1.5);
+    font-weight: 700;
+    text-shadow: 4px 1px 5px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1;
+}
+.rnd_slide li:before{
+    content: '';
+    width: 66px;
+    height: 80px;
+    background: var(--secondary-c);
+    box-shadow: 4px 1px 5px 0px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 20px;
+    z-index: 3;
+    transition: 0.4s;
+}
+.rnd_slide li:after{
+    content: '';
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    transition: 0.4s;
+}
+.rnd_slide li:hover a{
+    opacity: 1;
+}
+.rnd_slide li:hover:before{
+    background:linear-gradient(-36deg, #e52c60 0% , #b63687 100%);
+}
+.rnd_slide li:hover:after{
+    background: rgba(0, 0, 0, .1);
+}
+
+/* News & Media */
+.newsnmedia{
+    background: rgba(229, 44, 96, .1);
+}
+.newsnmedia h3{
+    text-align: left;
+    margin-bottom: var(--line-height);
+}
+.newsnmedia_con{
+    display: flex;
+    gap: 50px;
+}
+.newsnmedia_con .cf_container h4{
+    font-weight: 700;
+    text-align: left;
+    margin-top: var(--line-height);
+    margin-left: 30px;
+}
+.newsnmedia_con .cf_container p{
+    margin-left: 30px;
+    margin-bottom: var(--line-height);
+}
+.cf_container{
+    width: 526px;
+    height: 391px;
+    background: var(--white);
+    box-shadow: 4px 6px 15px 0px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+.cf_container a{
+    position: absolute;
+    right: 30px; top: 27px;
+    color: var(--primary-c);
+    text-decoration: underline;
+    font-weight: 700;
+}
+.video_wrapper{
+    text-align: center;
+}
+.cf_container .video_wrapper iframe{
+    width: 86%;
+}
+.news_container{
+    position: relative;
+}
+.news_container h4{
+    text-align: left;
+    font-weight: 700;
+}
+.news_container > p{
+    margin-bottom: var(--line-height);
+}
+.news_container > a{
+    position: absolute;
+    right: 0; top:18px;
+    color: var(--primary-c);
+    text-decoration: underline;
+    font-weight: 700;
+}
+.news_content ul{
+    display: flex;
+    gap: 53px;
+}
+.news_content ul li{
+    width: 204px;
+}
+.news_content ul li .caption{
+    background: var(--white);
+    padding: 10px 10px;
+}
+.caption .content_txt{
+    font-weight: 700;
+}
+.caption a{
+    color: var(--body-tc);
+}
+.news_content ul li:hover .caption a{
+    text-decoration: underline;
+}
