@@ -129,3 +129,129 @@ buttons
 .con_pd{
     padding: calc(var(--line-height)*3) 0;
 }
+
+/* Footer */
+footer{
+    background: var(--title-tc);
+    padding: calc(var(--line-height)*2) 0;
+    color: var(--white);
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.footer_left{
+    display: flex;
+}
+.footer_left .footer_logo{
+    background: url(../img/footer_logo.png) no-repeat center;
+    width: 306px;
+    height: 158px;
+    display: block;
+    text-indent: -9999em;
+}
+.footer_menu a{
+    color: var(--white);
+    margin: 0 10px;
+    position: relative;
+}
+.footer_menu a:first-child{
+    margin-left: 0;
+}
+.footer_menu a:after{
+    content: '';
+    width: 2px;
+    height: 12px;
+    background: var(--white);
+    position: absolute;
+    top: 50%; right: -10.5px;
+    transform: translateY(-50%);
+}
+.footer_menu a:hover{
+    text-decoration: underline;
+    font-weight: 700;
+}
+.footer_copyright{
+    font-size: 14px;
+    color: #d2d2d2;
+}
+.footer_copyright .top{
+    margin-bottom: var(--line-height);
+}
+.footer_left:after{
+    content: '';
+    width: 1px;
+    height: 180px;
+    background: var(--body-tc);
+    position: absolute;
+    right: 228px;
+}
+.footer_right{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer_link{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.footer_link li{
+    width: 54px;
+    height: 54px;
+    background: #f2f2f2;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+}
+.footer_link img{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+}
+.footer_link i{
+    color: var(--secondary-c);
+    font-size: 30px;
+    line-height: calc(var(--line-height)*2);
+}
+.footer_link li:hover i{
+    color: var(--primary-c);
+}
+.familysite{
+    position: relative;
+}
+.familysite button{
+    width: 194px;
+    height: 30px;
+    border-radius: 3px;
+    background: #f2f2f2;
+    text-align: left;
+    font-size: 14px;
+    color: var(--body-tc);
+}
+.familysite i{
+    position: absolute;
+    color: var(--body-tc);
+    font-size: 14px;
+    right: 10px; top: 50%;
+    transform: translateY(-40%);
+}
+
+/* BTN */
+.fixed{
+    width: 81px;
+    height: 81px;
+    border-radius: 50%;
+    border: 1px solid var(--secondary-c);
+    font-size: 40px;
+    color: var(--secondary-c);
+    background: var(--white);
+    position: fixed;
+    right:100%; bottom: 30px;
+}
+.fixed.service_btn{
+    background: var(--primary-c);
+    color: var(--white);
+}
