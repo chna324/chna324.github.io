@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인 - LG생활건강</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/signpage.css">
 </head>
 <body>
     <header>
@@ -70,39 +70,41 @@
         </div>
     </header>
     <main>
-        <section class="login_page">
+        <section class="sub_page sub_pd">
             <div class="login container">
                 <h2 class="main_tt">로그인</h2>
                 <p class="sub_tt">
                     L-care 통합 회원은 통합 아이디로 LG생활건강 패밀리 사이트를 이용할 수 있습니다.
                 </p>
-                <div class="login_left">
-                    <form class="login_form" action="#" method="post">
-                        <div class="login_wrap">
-                            <div class="id_input">
-                                <input type="text" name="userid" placeholder="아이디를 입력하세요." autofocus="autofocus" required>
-                                <span><i class="fa-solid fa-user"></i></span>
+                <div class="login_form">
+                    <div class="login_left">
+                        <form class="login_input" action="#" method="post">
+                            <div class="login_wrap">
+                                <div class="id_input">
+                                    <input type="text" name="userid" placeholder="아이디를 입력하세요." autofocus="autofocus" required>
+                                    <span><i class="fa-solid fa-user"></i></span>
+                                </div>
+                                <div class="pw_input">
+                                    <input type="password" name="userpw" placeholder="비밀번호를 입력하세요." required>
+                                    <span><i class="fa-solid fa-lock"></i></span>
+                                </div>
+                                <button type="button" id="submit_btn">로그인</button>
                             </div>
-                            <div class="pw_input">
-                                <input type="password" name="userpw" placeholder="비밀번호를 입력하세요." required>
-                                <span><i class="fa-solid fa-lock"></i></span>
-                            </div>
-                            <button type="button" id="submit_btn">로그인</button>
-                        </div>
-                    </form>
-                    <ul class="login_find">
-                        <li><a href="">ID 찾기</a></li>
-                        <li><a href="">비밀번호찾기</a></li>
-                        <li><a href="">회원가입</a></li>
-                    </ul>
-                </div>
-                <div class="login_right">
-                    <h3 class="menu_txt">SNS 간편 로그인</h3>
-                    <ul>
-                        <li><a href="">카카오로 로그인</a></li>
-                        <li><a href="">네이버로 로그인</a></li>
-                        <li><a href="">페이스북으로 로그인</a></li>
-                    </ul>
+                        </form>
+                        <ul class="login_find">
+                            <li><a href="">ID 찾기</a></li>
+                            <li><a href="">비밀번호찾기</a></li>
+                            <li><a href="">회원가입</a></li>
+                        </ul>
+                    </div>
+                    <div class="login_right">
+                        <h3 class="menu_txt">SNS 간편 로그인</h3>
+                        <ul>
+                            <li><a href="">카카오로 로그인</a></li>
+                            <li><a href="">네이버로 로그인</a></li>
+                            <li><a href="">페이스북으로 로그인</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>

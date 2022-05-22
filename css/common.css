@@ -255,3 +255,11 @@ footer{
     background: var(--primary-c);
     color: var(--white);
 }
+
+/* FORM */
+form input{
+    width: 350px;
+    height: 54px;
+    border:1px solid var(--secondary-c);
+    color: var(--secondary-c);
+}
