@@ -173,3 +173,6 @@ header nav ul li a{
     margin-top: 40px;
     background: var(--body-tc);
 }
+.signup_form form span{
+    display: none;
+}
