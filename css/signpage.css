@@ -33,17 +33,6 @@ header nav ul li a{
     text-indent: -9999em;
 }
 
-/* subpage main common */
-.sub_page{
-    background: #f2f2f2;
-}
-.sub_pd{
-    padding: calc(var(--line-height)*2) 0;
-}
-.sub_page div > p{
-    line-height: calc(var(--line-height)*2);
-}
-
 /* login page */
 .sub_page .login p{
     margin-bottom: var(--line-height);

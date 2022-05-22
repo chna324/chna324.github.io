@@ -271,3 +271,14 @@ form button{
     color: var(--white);
     text-align: center;
 }
+
+/* subpage main common */
+.sub_page{
+    background: #f2f2f2;
+}
+.sub_pd{
+    padding: calc(var(--line-height)*2) 0;
+}
+.sub_page div > p{
+    line-height: calc(var(--line-height)*2);
+}
