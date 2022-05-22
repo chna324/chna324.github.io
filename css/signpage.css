@@ -135,4 +135,41 @@ header nav ul li a{
     color: var(--body-tc);
 }
 
-/* BTN */
+/* signup page */
+.signup .sub_tt{
+    margin-bottom: 30px;
+    position: relative;
+}
+.signup .sub_tt:after{
+    content: '';
+    width: 415px;
+    height: 1px;
+    background: var(--secondary-c);
+    position: absolute;
+    left: 50%; bottom: -15px;
+    transform: translateX(-50%);
+}
+.signup_form{
+    width: 415px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.signup_form p{
+    margin-bottom: 20px;
+}
+.signup_form form input, .signup_form form button{
+    width: 100%;
+}
+.signup_form p label{
+    font-size: calc(var(--body-fz)*1.125);
+    font-weight: 700;
+}
+.signup_form form input{
+    margin-top: 10px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.signup_form form button{
+    margin-top: 40px;
+    background: var(--body-tc);
+}
