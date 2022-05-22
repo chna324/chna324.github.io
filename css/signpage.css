@@ -48,10 +48,91 @@ header nav ul li a{
 .sub_page .login p{
     margin-bottom: var(--line-height);
 }
+.login{
+    position: relative;
+}
 .login_form{
     display: flex;
     justify-content: center;
     gap: 101px;
 }
+.login_form:after{
+    content: '';
+    width: 1px;
+    height: 270px;
+    background: var(--secondary-c);
+    position: absolute;
+}
 
 /* login form */
+.login_wrap div{
+    position: relative;
+    margin-bottom: 10px;
+}
+.login_wrap div span{
+    position: absolute;
+    color: var(--secondary-c);
+    font-size: 21px;
+    line-height: calc(var(--line-height)*2);
+    left: 20px;
+}
+.login_wrap div input{
+    padding-left: 58px;
+    box-sizing: border-box;
+}
+.login_wrap button{
+    margin: 20px 0;
+}
+.login_find{
+    display: flex;
+    gap:41px;
+    position: relative;
+}
+.login_find li:first-child:after{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 12px;
+    background: var(--body-tc);
+    left: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.login_find li:last-child{
+    font-weight: 700;
+}
+.login_find li a{
+    color: var(--body-tc);
+}
+.login_right{
+    text-align: center;
+}
+.login_right h3{
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.login_right ul li{
+    width: 350px;
+    height: 54px;
+    margin-bottom: 10px;
+}
+.login_right ul li:nth-child(1){
+    background: #f9e94a;
+}
+.login_right ul li:nth-child(2){
+    background: #2ccf5b;
+}
+.login_right ul li:nth-child(3){
+    background: #0b5caa;
+}
+.login_right ul li a{
+    font-size: calc(var(--body-fz)*1.125);
+    font-weight: 700;
+    line-height: calc(var(--line-height)*2);
+    color: var(--white);
+}
+.login_right ul li:nth-child(1) a{
+    color: var(--body-tc);
+}
+
+/* BTN */

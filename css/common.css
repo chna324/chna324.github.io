@@ -263,3 +263,11 @@ form input{
     border:1px solid var(--secondary-c);
     color: var(--secondary-c);
 }
+form button{
+    width: 350px;
+    height: 54px;
+    line-height: calc(var(--line-height)*2);
+    background: var(--primary-c);
+    color: var(--white);
+    text-align: center;
+}
