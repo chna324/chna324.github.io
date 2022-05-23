@@ -42,11 +42,41 @@ header nav ul li a{
 }
 .brand_con ul{
     display: flex;
-    gap: 30px;
+    gap: 24px;
     flex-wrap: wrap;
 }
 .brand_con ul li{
     width: 304px;
     height: 180px;
     border: 1px solid var(--secondary-c);
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s;
+}
+.brand_con ul li img{
+    position: absolute;
+    bottom: 0;
+    transition: 0.4s;
+}
+.brand_con ul li:hover img{
+    bottom: -180px;
+}
+.brand_con ul li:hover:after{
+    position: absolute;
+    content: '';
+    left: 0; right: 0; top: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.brand_con ul li .brand_txt{
+    position: absolute;
+    color: var(--white);
+    z-index: 1;
+    left:50%;
+    bottom:50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+.brand_con ul li:hover .brand_txt{
+    opacity: 1;
 }
