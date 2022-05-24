@@ -440,10 +440,10 @@ header nav ul li a{
 }
 .news_content ul{
     display: flex;
-    gap: 53px;
+    gap: 20px;
 }
 .news_content ul li{
-    width: 204px;
+    width: 224px;
 }
 .news_content ul li .caption{
     background: var(--white);
