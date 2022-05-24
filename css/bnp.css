@@ -34,11 +34,36 @@ header nav ul li a{
 }
 
 /* BnP */
+.sub_page .sub_tt{
+    margin-bottom: var(--line-height);
+    position: relative;
+}
+.sub_page .sub_tt:after{
+    content: '';
+    width: 415px;
+    height: 1px;
+    background: var(--secondary-c);
+    position: absolute;
+    left: 50%; bottom: -14px;
+    transform: translateX(-50%);
+}
+.tab_menu{
+    padding-top: var(--line-height);
+}
 .tab_menu ul{
     display: flex;
     justify-content: center;
     gap: 60px;
     margin-bottom: 40px;
+}
+.tab_menu .primary.btn{
+    border:2px solid var(--primary-c);
+    width: 140px;
+    padding: 0;
+    text-align: center;
+}
+.tab_menu li:hover .primary.btn{
+    color: var(--white);
 }
 .brand_con ul{
     display: flex;
@@ -74,6 +99,7 @@ header nav ul li a{
     z-index: 1;
     left:50%;
     bottom:50%;
+    text-align: center;
     transform: translate(-50%,-50%);
     opacity: 0;
 }

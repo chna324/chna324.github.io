@@ -126,7 +126,7 @@ header nav ul li a{
 
 /* signup page */
 .signup .sub_tt{
-    margin-bottom: 30px;
+    margin-bottom: var(--line-height);
     position: relative;
 }
 .signup .sub_tt:after{
@@ -135,7 +135,7 @@ header nav ul li a{
     height: 1px;
     background: var(--secondary-c);
     position: absolute;
-    left: 50%; bottom: -15px;
+    left: 50%; bottom: -14px;
     transform: translateX(-50%);
 }
 .signup_form{
