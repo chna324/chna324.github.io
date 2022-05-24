@@ -283,19 +283,20 @@ header nav ul li a{
     background: var(--secondary-c);
 } */
 .rnd_text .controls a{
-    width: 18px;
+    width: 16px;
     height: 27px;
+    display: inline-block;
     background-repeat: no-repeat;
-    background-size: auto;
     text-indent: -9999em;
 }
 .rnd_text .controls .prev{
-    background: url(../img/con_prev.png);
+    background-image: url(../img/con_prev.png);
 }
 .rnd_text .controls .next{
-    background: url(../img/con_next.png);
+    background-image: url(../img/con_next.png);
 }
 .rnd_slide{
+    width: 965px;
     height:379px;
     overflow: hidden;
 }
