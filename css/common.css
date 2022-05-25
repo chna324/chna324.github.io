@@ -295,3 +295,8 @@ form button{
 .sub_page div > p{
     line-height: calc(var(--line-height)*2);
 }
+
+/* Header */
+.main_menu li{
+    width: 150px;
+}
