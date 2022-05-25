@@ -238,6 +238,16 @@ footer{
     right: 10px; top: 50%;
     transform: translateY(-40%);
 }
+.family_list li{
+    height: 30px;
+    background: var(--white);
+    font-size: 14px;
+    padding-left: 10px;
+    display: none;
+}
+.family_list li a{
+    color: var(--body-tc);
+}
 
 /* BTN */
 .fixed{
@@ -262,6 +272,9 @@ form input{
     height: 54px;
     border:1px solid var(--secondary-c);
     color: var(--secondary-c);
+}
+form input:focus{
+    border:1px solid var(--primary-c);
 }
 form button{
     width: 350px;

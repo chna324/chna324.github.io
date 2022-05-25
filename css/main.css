@@ -275,13 +275,22 @@ header nav ul li a{
 .rnd_text h3, .rnd_text p{
     text-align: left;
 }
-/* .rnd_text p:after{
+.rnd_text .sub_tt{
+    margin-bottom: var(--line-height);
+}
+.rnd_text:after{
     content: '';
     position: absolute;
     width: 305px;
     height: 2px;
+    bottom: 40px;
     background: var(--secondary-c);
-} */
+}
+.rnd_text .controls{
+    display: flex;
+    justify-content: flex-end;
+    gap:60px;
+}
 .rnd_text .controls a{
     width: 16px;
     height: 27px;

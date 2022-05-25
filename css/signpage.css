@@ -74,6 +74,10 @@ header nav ul li a{
 }
 .login_find{
     display: flex;
+    justify-content: space-between;
+}
+.login_find ul{
+    display: flex;
     gap:41px;
     position: relative;
 }
@@ -87,8 +91,9 @@ header nav ul li a{
     top: 50%;
     transform: translateY(-50%);
 }
-.login_find li:last-child{
+.login_find > a{
     font-weight: 700;
+    color: var(--body-tc);
 }
 .login_find li a{
     color: var(--body-tc);
