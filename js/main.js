@@ -1,7 +1,7 @@
 $(function(){
     //header
     let header = $('header');
-    
+
     $(window).scroll(function(){
         if($(this).scrollTop() >= 100){
             if(!header.hasClass('shrink')){
