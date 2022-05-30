@@ -15,15 +15,29 @@ $(function(){
     });
 
     //main 슬라이더
-
-    //rnd 멀티플 슬라이더
-    $('.rnd_slider').bxSlider({
+    /*
+    $('.main_slider').bxSlider({
+        // auto:true,
         pager:false,
-        minSlides:3,
-        moveSlides:1,
-        slideWidth:965,
-        slideMargin:24
+        // controls:false,
+        // speed:7000,
+        onSliderLoad:function(currentIndex){
+			$('.main_slider div').eq(currentIndex+1).find('video').get(0).play();
+		},
+		onSlideAfter:function($slideElement){
+			$slideElement.find('video').get(0).play();
+			$slideElement.siblings().find('video').get().pause();
+		}
     });
+    */
+    //rnd 멀티플 슬라이더
+    // $('.rnd_slider').bxSlider({
+    //     pager:false,
+    //     minSlides:3,
+    //     moveSlides:1,
+    //     slideWidth:965,
+    //     slideMargin:24
+    // });
     
     //비디오 모달
     let videoBtn = $('.video_icon'),
