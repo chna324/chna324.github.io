@@ -164,6 +164,8 @@ header nav ul li a{
 .bnp .product_list li{
     width: 413px;
     height: 433px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
     position: relative;
     overflow: hidden;
 }
@@ -201,8 +203,6 @@ header nav ul li a{
     content: '';
     position: absolute;
     left: 0; right: 0; top: 0; bottom: 0;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
     background: rgba(0, 0, 0, .3);
     opacity: 0;
     transition: 0.4s;
@@ -466,6 +466,7 @@ header nav ul li a{
     visibility: hidden;
     opacity: 0;
     transition:0.3s;
+    z-index: 100;
 }
 .video.active{
     opacity: 1;

@@ -1,4 +1,4 @@
-@import url(normalize.min.css);
+@import url(normalize.css);
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
 
@@ -260,15 +260,32 @@ footer{
     background: var(--white);
     position: fixed;
     right: 50px; bottom: 30px;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+.fixed.active{
+    visibility: visible;
+    opacity: 1;
 }
 .fixed.service_btn{
     background: var(--primary-c);
-    color: var(--white);
+}
+.fixed.service_btn img{
+    width: 44px;
+    height: 41px;
+    fill: var(--white);
 }
 .fixed.go_top_btn{
-    background:#f2f2f2;
-    color: var(--primary-c);
+    background:var(--white);
     bottom: 140px;
+}
+.fixed.go_top_btn a{
+    color: var(--secondary-c);
+}
+.fixed.go_top_btn a:hover{
+    color: var(--primary-c);
 }
 
 /* FORM */
