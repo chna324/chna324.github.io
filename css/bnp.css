@@ -61,6 +61,7 @@ header nav ul li a{
 }
 .tab_menu .primary.btn{
     border:2px solid var(--primary-c);
+    line-height: 36px;
     width: 140px;
     padding: 0;
     text-align: center;

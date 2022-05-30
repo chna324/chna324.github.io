@@ -107,7 +107,7 @@ header.shrink nav ul li a{
 .main_slide .slide3{
     background-image: url(../img/slide3.jpg);
 } */
-.main_slide .slide1 video{
+.main_slide li video{
     position: absolute;
     left: 0; right: 0; top: 0; bottom: 0;
     object-fit: cover;
