@@ -55,7 +55,7 @@ $(function(){
     
     //비디오 모달
     let videoBtn = $('.video_icon'),
-        targetVideo = $('#video');
+        targetVideo = $('#cf_video');
     
         videoBtn.click(function(e){
             e.preventDefault();
