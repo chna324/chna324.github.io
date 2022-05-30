@@ -170,9 +170,7 @@ header nav ul li a{
     margin-top: 40px;
     background: var(--body-tc);
 }
-/* .signup_form form span{
-    display: none;
-} */
 span.error_input{
     color: var(--primary-c);
+    font-weight: 700;
 }

@@ -65,7 +65,7 @@ header nav ul li a{
     padding: 0;
     text-align: center;
 }
-.tab_menu li:hover .primary.btn{
+.tab_menu .primary.btn:hover{
     color: var(--white);
 }
 .brand_con ul{
@@ -96,14 +96,14 @@ header nav ul li a{
     left: 0; right: 0; top: 0; bottom: 0;
     background: rgba(0, 0, 0, 0.5);
 }
-.brand_con ul li .brand_txt{
+.brand_con ul li div{
     position: absolute;
     color: var(--white);
     z-index: 1;
     left:50%;
-    bottom:50%;
+    bottom:25%;
     text-align: center;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-25%);
     opacity: 0;
 }
 .brand_con ul li:hover .brand_txt{
