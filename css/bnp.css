@@ -4,7 +4,9 @@
 header{
     z-index: 1;
     padding: 27px 0;
+    background: var(--white);
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 header div{
     display: flex;
@@ -13,7 +15,7 @@ header div{
 }
 header nav{
     display: flex;
-    gap: 50px;
+    gap: 50px;   
 }
 header nav ul{
     display: flex;
@@ -21,9 +23,35 @@ header nav ul{
 }
 header nav ul li .submenu{
     display: none;
+    /* position: absolute;
+    background: #f2f2f2; */
 }
-header nav ul li a{
+.submenu li{
+    padding: 5px 0;
+}
+header nav .main_menu li{
+    position: relative;
+}
+header nav .main_menu li a{
     color: var(--body-tc);
+    font-weight: 700;
+}
+header nav .main_menu li:hover a{
+    color: var(--primary-c);
+}
+header nav .main_menu li a:after{
+    content: '';
+    position: absolute;
+    width: 149px;
+    height: 3px;
+    background: var(--primary-c);
+    left: 0;
+    bottom: -40px;
+    opacity: 0;
+    transition: 0.4s;
+}
+header nav .main_menu li:hover a:after{
+    opacity: 1;
 }
 .top_links li+li{
     margin-left: 20px;
