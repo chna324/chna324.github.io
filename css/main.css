@@ -43,6 +43,7 @@ header nav ul li .submenu li{
 }
 header nav ul li a{
     color: var(--white);
+    font-weight: 700;
 }
 .top_links li+li{
     margin-left: 20px;
@@ -59,6 +60,23 @@ header.shrink .logo a{
 }
 header.shrink nav ul li a{
     color: var(--body-tc);
+}
+header.shrink nav ul li:hover a{
+    color: var(--primary-c);
+}
+header.shrink nav .main_menu li a:after{
+    content: '';
+    position: absolute;
+    width: 149px;
+    height: 3px;
+    background: var(--primary-c);
+    left: 0;
+    bottom: -40px;
+    opacity: 0;
+    transition: 0.4s;
+}
+header.shrink nav .main_menu li:hover a:after{
+    opacity: 1;
 }
 
 /* Main Slide */
