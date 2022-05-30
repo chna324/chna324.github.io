@@ -259,11 +259,16 @@ footer{
     color: var(--secondary-c);
     background: var(--white);
     position: fixed;
-    right:100%; bottom: 30px;
+    right: 50px; bottom: 30px;
 }
 .fixed.service_btn{
     background: var(--primary-c);
     color: var(--white);
+}
+.fixed.go_top_btn{
+    background:#f2f2f2;
+    color: var(--primary-c);
+    bottom: 140px;
 }
 
 /* FORM */

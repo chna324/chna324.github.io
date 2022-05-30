@@ -5,3 +5,15 @@ $('.rnd_slider').bxSlider({
     slideWidth:965,
     slideMargin:24
 });
+
+//비디오 모달
+let videoBtn = $('.video_icon'),
+    targetVideo = $('#video');
+
+    videoBtn.click(function(e){
+        e.preventDefault();
+        targetVideo.addClass('active');
+    });
+    targetVideo.click(function(){
+        targetVideo.removeClass('active');
+    });

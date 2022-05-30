@@ -13,17 +13,20 @@ header div{
 }
 header nav{
     display: flex;
-    gap: 84px;
+    gap: 50px;
 }
 header nav ul{
     display: flex;
-    gap:30px;
+    text-align: center;
 }
 header nav ul li .submenu{
     display: none;
 }
 header nav ul li a{
     color: var(--body-tc);
+}
+.top_links li+li{
+    margin-left: 20px;
 }
 .logo a{
     width: 272px;
