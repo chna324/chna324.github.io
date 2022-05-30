@@ -31,13 +31,27 @@ $(function(){
     });
     */
     //rnd 멀티플 슬라이더
-    // $('.rnd_slider').bxSlider({
-    //     pager:false,
-    //     minSlides:3,
-    //     moveSlides:1,
-    //     slideWidth:965,
-    //     slideMargin:24
-    // });
+    let rndSlider = $('.rnd_slider').bxSlider({
+        pager:false,
+        controls:false,
+        speed:700,
+        auto:true,
+        minSlides:3,
+        maxSlides:3,
+        moveSlides:1,
+        slideWidth:305,
+        slideMargin:24,
+        autoHover:true,
+        infiniteLoop:true
+    });
+    $('.rnd_controls .prev').click(function(e){
+        e.preventDefault();
+        rndSlider.goToPrevSlide();
+    })
+    $('.rnd_controls .next').click(function(e){
+        e.preventDefault();
+        rndSlider.goToNextSlide();
+    })
     
     //비디오 모달
     let videoBtn = $('.video_icon'),

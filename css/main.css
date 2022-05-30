@@ -336,22 +336,22 @@ header.shrink nav .main_menu li:hover a:after{
     bottom: 40px;
     background: var(--secondary-c);
 }
-.rnd_text .controls{
+.rnd_text .rnd_controls{
     display: flex;
     justify-content: flex-end;
     gap:60px;
 }
-.rnd_text .controls a{
+.rnd_text .rnd_controls a{
     width: 16px;
     height: 27px;
     display: inline-block;
     background-repeat: no-repeat;
     text-indent: -9999em;
 }
-.rnd_text .controls .prev{
+.rnd_text .rnd_controls .prev{
     background-image: url(../img/con_prev.png);
 }
-.rnd_text .controls .next{
+.rnd_text .rnd_controls .next{
     background-image: url(../img/con_next.png);
 }
 .rnd_slide_wrapper{
@@ -361,14 +361,16 @@ header.shrink nav .main_menu li:hover a:after{
 }
 .rnd_slide_wrapper .rnd_slider{
     display: flex;
-    gap: 24px;
+    /* gap: 24px; */
 }
 .rnd_slide_wrapper .rnd_slider div{
     width:305px;
     height: 379px;
+    position: relative;
+}
+.rnd_slide_wrapper .rnd_slider div img{
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
-    position: relative;
 }
 /* .rnd_slide_wrapper .slide_container li:nth-child(1){
     background: url(../img/rnd_con1.jpg);
@@ -388,7 +390,7 @@ header.shrink nav .main_menu li:hover a:after{
 .rnd_slide_wrapper .slide_container li:nth-child(6){
     background: url(../img/rnd_con6.jpg);
 } */
-.rnd_slide_wrapper div a{
+.rnd_slide_wrapper .rnd_slider div a{
     position: absolute;
     width: 120px;
     text-align: center;
@@ -398,17 +400,18 @@ header.shrink nav .main_menu li:hover a:after{
     opacity: 0;
     transition: 0.4s;
 }
-.rnd_slide_wrapper div span{
+.rnd_slide_wrapper .rnd_slider div span{
     color: var(--white);
     font-size: calc(var(--body-fz)*1.5);
     font-weight: 700;
+    text-align: right;
     text-shadow: 4px 1px 5px rgba(0, 0, 0, 0.4);
     position: absolute;
     right: 20px;
     bottom: 20px;
     z-index: 1;
 }
-/* .rnd_slide_wrapper div:before{
+.rnd_slide_wrapper .rnd_slider div:before{
     content: '';
     width: 66px;
     height: 80px;
@@ -419,20 +422,22 @@ header.shrink nav .main_menu li:hover a:after{
     z-index: 3;
     transition: 0.4s;
 }
-.rnd_slide_wrapper div:after{
+.rnd_slide_wrapper .rnd_slider div:after{
     content: '';
     background: rgba(0, 0, 0, .5);
     position: absolute;
     left: 0; right: 0; top: 0; bottom: 0;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
     transition: 0.4s;
 }
-.rnd_slide_wrapper div:hover a{
+.rnd_slide_wrapper .rnd_slider div:hover a{
     opacity: 1;
 }
-.rnd_slide_wrapper div:hover:before{
+.rnd_slide_wrapper .rnd_slider div:hover:before{
     background:linear-gradient(-36deg, #e52c60 0% , #b63687 100%);
 }
-.rnd_slide_wrapper div:hover:after{
+.rnd_slide_wrapper .rnd_slider div:hover:after{
     background: rgba(0, 0, 0, .1);
 }
 
