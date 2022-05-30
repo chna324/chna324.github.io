@@ -1,4 +1,20 @@
 $(function(){
+    //header
+    let header = $('header');
+    
+    $(window).scroll(function(){
+        if($(this).scrollTop() >= 100){
+            if(!header.hasClass('shrink')){
+                header.addClass('shrink');
+            }
+        }else{
+            if(header.hasClass('shrink')){
+                header.removeClass('shrink');                    
+            }
+        };
+    });
+
+    //main 슬라이더
 
     //rnd 멀티플 슬라이더
     $('.rnd_slider').bxSlider({
