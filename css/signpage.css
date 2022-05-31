@@ -100,9 +100,6 @@ header nav .main_menu li:hover a:after{
     padding-left: 58px;
     box-sizing: border-box;
 }
-.login_form .login_left .login_input .login_wrap div input:focus{
-    border:2px solid var(--primary-c);
-}
 .login_wrap button{
     margin: 20px 0;
 }
@@ -187,9 +184,6 @@ header nav .main_menu li:hover a:after{
 }
 .signup_form form input, .signup_form form button{
     width: 100%;
-}
-.signup .signup_form form p input:focus{
-    border:2px solid var(--primary-c);
 }
 .signup_form p label{
     font-size: calc(var(--body-fz)*1.125);

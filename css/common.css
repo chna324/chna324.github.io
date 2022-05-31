@@ -294,6 +294,10 @@ form input{
     height: 54px;
     border:1px solid var(--secondary-c);
     color: var(--body-tc);
+    outline:none;
+}
+form input:focus{
+    border:2px solid var(--primary-c);
 }
 form input::placeholder{
     color: var(--secondary-c);
