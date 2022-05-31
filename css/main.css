@@ -41,7 +41,7 @@ header nav ul li .submenu{
 header nav ul li .submenu li{
     white-space: nowrap;
 }
-header nav ul li a{
+header nav .main_menu li a{
     color: var(--white);
     font-weight: 700;
 }
