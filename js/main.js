@@ -15,21 +15,30 @@ $(function(){
     });
 
     //main 슬라이더
-    /*
-    $('.main_slider').bxSlider({
+    let autoSlide = $('.auto_slider').bxSlider({
         // auto:true,
-        pager:false,
-        // controls:false,
+        pager:true,
+        controls:false,
         // speed:7000,
         onSliderLoad:function(currentIndex){
-			$('.main_slider div').eq(currentIndex+1).find('video').get(0).play();
+			$('.auto_slider li').eq(currentIndex+1).find('video').get(0).play();
 		},
 		onSlideAfter:function($slideElement){
 			$slideElement.find('video').get(0).play();
 			$slideElement.siblings().find('video').get().pause();
 		}
     });
-    */
+
+    $('.main_slide .controls .next').click(function(e){
+        e.preventDefault();
+        autoSlide.goToNextSlide();
+    });
+
+    $('.main_slide .controls .prev').click(function(e){
+        e.preventDefault();
+        autoSlide.goToNextSlide();
+    });
+    
     //rnd 멀티플 슬라이더
     let rndSlider = $('.rnd_slider').bxSlider({
         pager:false,
