@@ -16,10 +16,10 @@ $(function(){
 
     //main 슬라이더
     let autoSlide = $('.auto_slider').bxSlider({
-        // auto:true,
+        //auto:true,
         pager:true,
         controls:false,
-        // speed:7000,
+        //speed:7000,
         onSliderLoad:function(currentIndex){
 			$('.auto_slider li').eq(currentIndex+1).find('video').get(0).play();
 		},
