@@ -264,6 +264,7 @@ footer{
     opacity: 0;
     visibility: hidden;
     transition: 0.4s;
+    text-align: center;
 }
 .fixed.active{
     visibility: visible;
@@ -276,15 +277,17 @@ footer{
     width: 44px;
     height: 41px;
     fill: var(--white);
+    margin-top: 19px;
 }
 .fixed.go_top_btn{
     background:var(--white);
     bottom: 140px;
 }
-.fixed.go_top_btn a{
+.fixed.go_top_btn i{
     color: var(--secondary-c);
+    line-height: 81px;
 }
-.fixed.go_top_btn a:hover{
+.fixed.go_top_btn i:hover{
     color: var(--primary-c);
 }
 

@@ -1,6 +1,10 @@
 $(function(){
     //header
-    let header = $('header');
+    let header = $('header'),
+        headerHeight = header.outerHeight(),
+        newHeight = 0,
+        menu = header.find('nav>ul>li'),
+        submenu = menu.find('ul');
 
     $(window).scroll(function(){
         if($(this).scrollTop() >= 100){
@@ -12,6 +16,19 @@ $(function(){
                 header.removeClass('shrink');                    
             }
         };
+    });
+
+    //header submenu
+    submenu.each(function(){
+        if($(this).outerHeight() > newHeight){
+            newHeight = headerHeight + $(this).outerHeight();
+        };
+    });
+    menu.mouseover(function(){
+        header.stop().animate({height:newHeight});
+    })
+    .mouseout(function(){
+        header.stop().animate({height:headerHeight});
     });
 
     //main 슬라이더

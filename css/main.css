@@ -28,18 +28,30 @@ header nav ul{
     display: flex;
     text-align: center;
 }
+header .top_links{
+    display: flex;
+    text-align: center;
+}
+header .top_links a{
+    color: var(--white);
+}
 header nav ul li{
     position: relative;
 }
 header nav ul li .submenu{
-    display: none;
-    /* width: 100%;
+    /* display: none; */
+    position: absolute;
+    top:100%;
     display: flex;
-    flex-wrap: wrap;
-    position: absolute; */
+    justify-content: center;
+    flex-direction: column;
+    gap:15px;
+    padding: 15px 0; 
 }
 header nav ul li .submenu li{
     white-space: nowrap;
+    font-weight: 400;
+    font-size: calc(var(--body-fz)*1.125);
 }
 header nav ul li a{
     color: var(--white);
@@ -212,8 +224,6 @@ header.shrink nav .main_menu li:hover a:after{
     width: 80px;
     border-radius: 12px;
 }
-
-
 
 /* Brand & Products */
 
@@ -577,3 +587,5 @@ header.shrink nav .main_menu li:hover a:after{
 .news_content ul li:hover .caption a{
     text-decoration: underline;
 }
+
+/* Responsive */
