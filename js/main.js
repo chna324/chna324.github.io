@@ -24,16 +24,24 @@ $(function(){
             newHeight = headerHeight + $(this).outerHeight();
         };
     });
-    menu.mouseover(function(){
-        header.stop().animate({height:newHeight});
-    })
-    .mouseout(function(){
-        header.stop().animate({height:headerHeight});
-    });
+
+    menu.hover(
+        function(){		
+            header.stop().animate({height:newHeight});
+        },
+        function(){
+            header.stop().animate({height:headerHeight});
+        }
+    );
+    // menu.mouseover(function(){
+    //     header.stop().animate({height:newHeight});
+    // })
+    // .mouseout(function(){
+    //     header.stop().animate({height:headerHeight});
+    // });
 
     //main 슬라이더
     let autoSlide = $('.auto_slider').bxSlider({
-        //auto:true,
         pager:true,
         controls:false,
         //speed:7000,
