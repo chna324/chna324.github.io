@@ -1,4 +1,26 @@
 $(function(){
+    //header submenu
+    let header = $('header'),
+        headerHeight = header.outerHeight(),
+        newHeight = 0,
+        menu = header.find('nav>ul>li'),
+        submenu = menu.find('ul');
+        
+    submenu.each(function(){
+        if($(this).outerHeight() > newHeight){
+            newHeight = headerHeight + $(this).outerHeight();
+        };
+    });
+
+    menu.hover(
+        function(){		
+            header.stop().animate({height:newHeight});
+        },
+        function(){
+            header.stop().animate({height:headerHeight});
+        }
+    );
+
     //로그인 페이지 오류
     $('.login_input form').validate({
         rules:{
@@ -34,8 +56,5 @@ $(function(){
         errorClass:'error_input',
         errorElement:'span'
     });
-
-
-
 
 });

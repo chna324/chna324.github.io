@@ -33,12 +33,6 @@ $(function(){
             header.stop().animate({height:headerHeight});
         }
     );
-    // menu.mouseover(function(){
-    //     header.stop().animate({height:newHeight});
-    // })
-    // .mouseout(function(){
-    //     header.stop().animate({height:headerHeight});
-    // });
 
     //main 슬라이더
     let autoSlide = $('.auto_slider').bxSlider({
@@ -111,5 +105,13 @@ $(function(){
     Btn.click(function(e){
         e.preventDefault();
        $('body,html').animate({scrollTop:0},500);
+    });
+
+    //product page
+    var mixer = mixitup('.mix-wrapper',{
+        "animation": {
+            "enable":false,
+            "duration": 400
+        }
     });
 });

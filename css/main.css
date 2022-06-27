@@ -9,7 +9,7 @@ header{
     right:0;
     padding: 27px 0;
     height: 54px;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in;
     overflow: hidden;
 }
 header.shrink{
@@ -88,7 +88,7 @@ header.shrink nav .main_menu > li:after{
     height: 3px;
     background: var(--primary-c);
     left: 0;
-    bottom: 0;
+    bottom: -15px;
     opacity: 0;
     transition: 0.4s;
 }

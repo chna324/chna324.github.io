@@ -2,10 +2,17 @@
 
 /* Header */
 header{
-    z-index: 1;
+    position: absolute;
+    left: 0;
+    left: 0;
+	right: 0;
+	top: 0;
+    z-index: 1000;
     padding: 27px 0;
     background: var(--white);
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+    height: 54px;
+    transition: 0.3s ease-in;
     overflow: hidden;
 }
 header div{
@@ -14,6 +21,7 @@ header div{
     align-items: center;
 }
 header nav{
+    line-height: 54px;
     display: flex;
     gap: 50px;   
 }
@@ -21,36 +29,49 @@ header nav ul{
     display: flex;
     text-align: center;
 }
-header nav ul li .submenu{
-    display: none;
-    /* position: absolute;
-    background: #f2f2f2; */
+header .top_links{
+    display: flex;
+    text-align: center;
 }
-.submenu li{
-    padding: 5px 0;
+header nav ul li .submenu{
+    /* display: none; */
+    position: absolute;
+    top:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:15px;
+    padding: 15px 0; 
+}
+header nav ul li .submenu li{
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: calc(var(--body-fz)*1.125);
 }
 header nav .main_menu li{
     position: relative;
 }
-header nav .main_menu li a{
+header nav ul li a{
     color: var(--body-tc);
+}
+header nav .main_menu{
     font-weight: 700;
 }
-header nav .main_menu li:hover a{
+/* header nav .main_menu li:hover a{
     color: var(--primary-c);
-}
-header nav .main_menu li a:after{
+} */
+header nav .main_menu > li:after{
     content: '';
     position: absolute;
     width: 149px;
     height: 3px;
     background: var(--primary-c);
     left: 0;
-    bottom: -40px;
+    bottom: -15px;
     opacity: 0;
     transition: 0.4s;
 }
-header nav .main_menu li:hover a:after{
+header nav .main_menu > li:hover:after{
     opacity: 1;
 }
 .top_links li+li{
