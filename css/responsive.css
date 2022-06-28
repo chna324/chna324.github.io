@@ -7,8 +7,88 @@
     .esg_list{
         gap: 0;
     }
-}
+    .esg_list li{
+        width: 630px;
+    }
+    .rnd{
+        padding: calc(var(--line-height)*3) 16px;
+        gap: 0;
+    }
+    .newsnmedia_con{
+       gap:20px; 
+    }
+} /* 수정해야됨 */
 
-@media (max-width:840px){
 
+@media (max-width:768px){
+    .container{
+        padding: 0;
+        padding: 0 auto;
+    }
+    header nav{
+        display: none;
+    }
+    header > .container{
+        justify-content: center;
+    }
+    header .top_links{
+        /* display: none; */
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+    }
+    header .toggle_menu_btn{
+        display: block;
+        position: absolute;
+        left: 10px;
+        cursor: pointer;
+    }
+    .top_links .mobile_icon{
+        display: block;
+    }
+    .top_links .web_link{
+        display: none;
+    }
+    .slide_container li .content{
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .main_slide li div .main_tt{
+        width: 65vw;
+    }
+    .bnp .product_list{
+        gap:16px;
+    }
+    .bnp .product_list li{
+        width: 59vh;
+        height: 59vh;
+    }
+    .bnp .product_list li:after{
+        display: none;
+    }
+    .bnp .product_list li span{
+        color: var(--body-tc);
+        opacity: 1;
+        bottom: 44%;
+    }
+    .bnp .product_list li a{
+        /* bottom: 80%; */
+        display: none;
+    }
+    .bnp .product_list li:hover img{
+        transform: scale(1);
+    }
+    .esg .sub_tt{
+        width: 72vw;
+        margin-bottom: 0;
+        margin:0 auto calc(var(--line-height)*2);
+    }
+    .esg_list{
+        gap: 14px;
+    }
+    .esg_list li{
+        width: 49%;
+        background-position: center;
+    }
 }
