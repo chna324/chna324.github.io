@@ -461,6 +461,9 @@ aside{
     bottom: 20px;
     z-index: 1;
 }
+.rnd_slide_wrapper .rnd_slider div span em{
+    color: var(--white);
+}
 .rnd_slide_wrapper .rnd_slider div:before{
     content: '';
     width: 66px;
@@ -498,6 +501,9 @@ aside{
 .newsnmedia h3{
     text-align: left;
     margin-bottom: var(--line-height);
+}
+.newsnmedia .responsive_tt{
+    display: none;
 }
 .newsnmedia_con{
     display: flex;
@@ -603,4 +609,6 @@ aside{
 .news_content ul li:hover .caption a{
     text-decoration: underline;
 }
-
+.newsnmedia_con.responsive_con{
+    display: none;
+}
