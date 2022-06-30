@@ -195,4 +195,33 @@
     .fixed{
         right: 30px;
     }
+    /* bnp page */
+    .brand_con ul{
+        gap: 16px;
+    }
+    .brand_con ul li{
+        width: 30vw;
+    }
+    .brand_con ul li img{
+        left:50%;
+        transform: translateX(-50%);
+    }
+    /* sign page */
+    .sub_page .login p{
+        width: 60vw;
+        margin: 0 auto;
+        line-height: var(--line-height);
+        padding-bottom: calc(var(--line-height)*2);
+    }
+    .login_form{
+        flex-wrap: wrap;
+    }
+    form input,form button{
+        width: 63vw;
+    }
+    .login_form:after{
+        width: 63vw;
+        height: 1px;
+        bottom: 39%;
+    }
 }

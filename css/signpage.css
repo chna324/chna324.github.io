@@ -84,8 +84,24 @@ header nav .main_menu > li:hover:after{
     display: block;
     text-indent: -9999em;
 }
+header .toggle_menu_btn{
+    display: none;
+    color: var(--body-tc);
+}
+.top_links .mobile_icon{
+    display: none;
+}
+.top_links a{
+    color: var(--body-tc);
+}
+aside{
+    display: none;
+}
 
 /* login page */
+main{
+    padding-top: calc(var(--line-height)*4);
+}
 .sub_page .login p{
     margin-bottom: var(--line-height);
 }
