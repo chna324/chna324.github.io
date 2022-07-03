@@ -235,6 +235,9 @@ main{
     margin-top: 40px;
     background: var(--body-tc);
 }
+.signup_form form button:hover{
+    background: var(--primary-c);
+}
 span.error_input{
     color: var(--primary-c);
     font-weight: 700;

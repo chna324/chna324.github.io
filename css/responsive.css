@@ -3,6 +3,7 @@
     .container{
         width:100%;
         padding: 0 16px;
+        box-sizing: border-box;
     }
     .esg_list{
         gap: 0;
@@ -17,14 +18,11 @@
     .newsnmedia_con{
        gap:20px; 
     }
+    /* news media 부분이랑 footer 수정해야됨 */
 } /* 수정해야됨 */
 
 
 @media (max-width:800px){
-    .container{
-        /* padding: 0; */
-        padding: 0 auto;
-    }
     header nav{
         display: none;
     }
@@ -62,19 +60,20 @@
         padding: 0 16px;
     }
     .bnp .product_list li{
-        width: 59vh;
-        height: 59vh;
+        width: 246px;
+        height: 258px;
     }
     .bnp .product_list li:after{
         display: none;
     }
     .bnp .product_list li span{
+        /* display: none; */
         color: var(--body-tc);
         opacity: 1;
-        bottom: 44%;
+        bottom: 0;
     }
     .bnp .product_list li a{
-        /* bottom: 80%; */
+        bottom: 80%;
         display: none;
     }
     .bnp .product_list li:hover img{
@@ -89,12 +88,14 @@
         gap: 14px;
     }
     .esg_list li{
-        width: 47%;
+        width: 49%;
         background-position: center;
     }
     .rnd{
         justify-content: normal;
         gap: 16px;
+        align-items: center;
+        padding: calc(var(--line-height)*3) 16px 0;
     }
     .rnd_text{
         width:22%;
@@ -102,9 +103,7 @@
     .rnd_slide_wrapper{
         width: 71%;
         height: 78%;
-    }
-    .rnd_slide_wrapper .rnd_slider div{
-        width: 59%;
+        /* box-sizing: content-box; */
     }
     .rnd_slide_wrapper .rnd_slider div img{
         object-fit: cover;
@@ -122,11 +121,19 @@
     .rnd_slide_wrapper .rnd_slider div span em{
         color: var(--primary-c);
     }
-    .rnd_text .sub_tt, .rnd_text:after{
+    .rnd_text .sub_tt{
         display: none;
     }
+    .rnd_text:after{
+        /* top: 100%; */
+        bottom: 0;
+        width: 93vw;
+        background: var(--primary-c);
+    }
     .rnd_text .rnd_controls{
-        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
     }
     .newsnmedia h3{
         text-align: center;
@@ -169,13 +176,14 @@
         height: 41vw;
         object-fit: cover;
     }
-    .news_content .caption{
-        height: 9vw;
+    .news_content ul li .caption{
+        padding: 5px 10px;
     }
     .footer{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        flex-direction: column;
         gap: 20px;
     }
     .footer_left .footer_logo{
@@ -192,6 +200,9 @@
     .footer_left:after{
         display: none;
     }
+    .footer_menu a{
+        font-size: 14px;
+    }
     .fixed{
         right: 30px;
     }
@@ -206,9 +217,16 @@
         left:50%;
         transform: translateX(-50%);
     }
+    .brand_con .primary.btn{
+        display: none;
+    }
+    .responsive_btn{
+        display: block;
+        margin-top: 10px;
+    }
     /* sign page */
     .sub_page .login p{
-        width: 60vw;
+        width: 72vw;
         margin: 0 auto;
         line-height: var(--line-height);
         padding-bottom: calc(var(--line-height)*2);
@@ -223,5 +241,57 @@
         width: 63vw;
         height: 1px;
         bottom: 39%;
+    }
+    .signup .sub_tt{
+        width: 72vw;
+        margin: 0 auto;
+        line-height: var(--line-height);
+    }
+}
+
+@media (max-width:494px){
+    .logo a{
+        width: 46vw;
+        height: 9vw;
+        background-size: cover;
+    }
+    header.shrink .logo a{
+        width: 46vw;
+        height: 9vw;
+        background-size: cover;
+    }
+    .bnp .sub_tt{
+        width: 76vw;
+        margin: 0 auto calc(var(--line-height)*2);
+    }
+    .esg_list li{
+        width: 93vw;
+        height: 40vw;
+    }
+    /*.news_content ul{
+        flex-wrap: wrap;
+         width: 63vw; 
+    }*/
+     /*.news_content ul li{
+        width: 63vw;
+    }
+    .news_content ul li{
+        width: 100%;
+    }
+    .news_content .img_wrap{
+        width: 100%;
+        height: 67vw;
+        object-fit: cover;
+    } */
+    /* BNP */
+    .tab_menu ul{
+        gap: 10px;
+    }
+    .brand_con ul{
+        gap: 10px;
+    }
+    .brand_con ul li{
+        width: 44vw;
+        height: 32vw;
     }
 }

@@ -175,3 +175,8 @@ main{
 .brand_con ul li:hover .brand_txt{
     opacity: 1;
 }
+.responsive_btn{
+    color: var(--white);
+    font-size: 27px;
+    display: none;
+}
