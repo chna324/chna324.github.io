@@ -107,19 +107,11 @@ $(function(){
        $('body,html').animate({scrollTop:0},500);
     });
 
-    //product page
-    var mixer = mixitup('.mix-wrapper',{
-        "animation": {
-            "enable":false,
-            "duration": 400
-        }
-    });
-
     //toggle menu
     let toggleBtn = $('.aside_btn');
     toggleBtn.click(()=>{
         $('aside').toggleClass('active');
-    })
+    });
 
     let toggleMenu = $('.toggle_menu > li');
     toggleMenu.click(function(){
@@ -127,5 +119,5 @@ $(function(){
         $(this).siblings().find('ul').slideUp();
         $(this).toggleClass('active');
         $(this).siblings().removeClass('active');
-    })
+    });
 });

@@ -270,7 +270,7 @@
         top: 0;
         bottom: 0;
         background: #fff;    
-        z-index:10000;
+        z-index:-1;
         display: flex;
         flex-direction:column;
         /* overflow-y: auto; */
@@ -328,6 +328,25 @@
     }
     .toggle_menu li .submenu li{
         line-height: 40px;
+    }
+    .toggle_menu li .submenu li a{
+        color: var(--secondary-c);
+    }
+    .toggle_menu li .submenu li a.active{
+        color: var(--body-tc);
+    }
+    .toggle_menu li .submenu li:before{
+        content: '- ';
+        color: var(--secondary-c);
+    }
+    .toggle_menu > li ul{
+        display: none;
+    }
+    aside main a.aside_bottom{
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
