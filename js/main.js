@@ -114,4 +114,18 @@ $(function(){
             "duration": 400
         }
     });
+
+    //toggle menu
+    let toggleBtn = $('.aside_btn');
+    toggleBtn.click(()=>{
+        $('aside').toggleClass('active');
+    })
+
+    let toggleMenu = $('.toggle_menu > li');
+    toggleMenu.click(function(){
+        $(this).find('ul').slideToggle();
+        $(this).siblings().find('ul').slideUp();
+        $(this).toggleClass('active');
+        $(this).siblings().removeClass('active');
+    })
 });

@@ -164,9 +164,11 @@ aside{
     font-size: calc(var(--body-fz)*3.375);
     font-weight: 700;
     line-height: calc(var(--line-height)*3);
+    text-shadow: 2px 1px 5px var(--body-tc);
 }
 .main_slide li div .main_tt{
     margin-bottom: var(--line-height);
+    text-shadow: 2px 1px 5px var(--body-tc);
 }
 .slide_container li .content{
     position: absolute;
