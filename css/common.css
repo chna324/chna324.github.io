@@ -179,13 +179,17 @@ footer{
 .footer_copyright .top{
     margin-bottom: var(--line-height);
 }
-.footer_left:after{
+.footer_left > div{
+    position: relative;
+}
+.footer_left > div:after{
     content: '';
     width: 1px;
     height: 180px;
     background: var(--body-tc);
     position: absolute;
-    right: 228px;
+    right: -40px;
+    top: 0;
 }
 .footer_right{
     display: flex;
