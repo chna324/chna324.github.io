@@ -608,6 +608,9 @@ aside{
     display: flex;
     flex-direction: column;
 }
+.news_content ul li.responsive_list{
+    display: none;
+}
 .news_content ul li .caption{
     background: var(--white);
     padding: 10px 10px;
