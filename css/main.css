@@ -382,6 +382,9 @@ aside{
 .rnd_text h3, .rnd_text p{
     text-align: left;
 }
+.rnd_text p.menu_txt{
+    margin-bottom: 25px;
+}
 .rnd_text .sub_tt{
     margin-bottom: var(--line-height);
 }
