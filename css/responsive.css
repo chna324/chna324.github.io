@@ -151,6 +151,10 @@
             padding: var(--line-height) 0;
             /* box-sizing: border-box; */
         }
+        aside header.aside_header{
+            box-shadow: none;
+            width: 100%;
+        }
         aside header:after{
             content: '';
             width: 100%;

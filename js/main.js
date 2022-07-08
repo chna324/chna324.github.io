@@ -64,7 +64,7 @@ $(function(){
         controls:false,
         speed:700,
         auto:true,
-        minSlides:3,
+        minSlides:1,
         maxSlides:3,
         moveSlides:1,
         slideWidth:305,
@@ -75,24 +75,12 @@ $(function(){
     $('.rnd_controls .prev').click(function(e){
         e.preventDefault();
         rndSlider.goToPrevSlide();
-    })
+    });
     $('.rnd_controls .next').click(function(e){
         e.preventDefault();
         rndSlider.goToNextSlide();
-    })
-    $(window).resize(function(){
-        if($(this).width() <= 746){
-            $('.rnd_slider').bxSlider({
-                pager:false,
-                controls:false,
-                speed:700,
-                auto:true,
-                minSlides:1,
-                maxSlides:1,
-                moveSlides:1
-            });
-        }
     });
+
     
     //비디오 모달
     let videoBtn = $('.video_icon'),
