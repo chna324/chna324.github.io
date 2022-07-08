@@ -149,7 +149,7 @@ main{
     position: relative;
     transition: 0.4s;
 }
-.brand_con ul li img{
+.brand_con ul li{
     position: absolute;
     bottom: 0;
     transition: 0.4s;

@@ -36,6 +36,10 @@
         width: unset;
         padding: 0 10px;
     }
+    .brand_con ul{
+        gap: 16px;
+    }
+
     
 }
 @media (max-width:1317px){
@@ -342,12 +346,14 @@
     .brand_con ul{
         gap: 8px;
     }
-    .brand_con ul li{
-        width: 25vw;
-    }
+    /* .brand_con ul li{
+        width: 30vw;
+        height: 20vw;
+    } */
     .brand_con ul li img{
         left:50%;
         transform: translateX(-50%);
+        object-fit: contain;
     }
     .brand_con .primary.btn{
         display: none;
