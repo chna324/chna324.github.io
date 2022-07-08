@@ -91,9 +91,7 @@ $(function(){
                 maxSlides:1,
                 moveSlides:1
             });
-        }else{
-            
-        };
+        }
     });
     
     //비디오 모달
