@@ -459,6 +459,13 @@
         transform: translateX(-50%);
     }
 }
+@media (max-width:746px){
+    .esg_list li{
+        width: 93vw;
+        height: 40vw;
+        background-size: cover;
+    }
+}
 @media (max-width:494px){
     .logo a{
         width: 46vw;
