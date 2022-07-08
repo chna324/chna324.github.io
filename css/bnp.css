@@ -138,6 +138,7 @@ main{
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .brand_con ul li{
     width: 304px;

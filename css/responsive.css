@@ -25,6 +25,18 @@
     .footer_left > div:after{
         right: -20px;
     }
+    /* SUB PAGE */
+    .sub_pd{
+        padding:calc(var(--line-height)*2) 16px;
+    }
+    .tab_menu ul{
+        gap: 26px;
+    }
+    .tab_menu .primary.btn{
+        width: unset;
+        padding: 0 10px;
+    }
+    
 }
 @media (max-width:1317px){
     .rnd{
@@ -328,10 +340,10 @@
 
     /* bnp page */
     .brand_con ul{
-        gap: 16px;
+        gap: 8px;
     }
     .brand_con ul li{
-        width: 30vw;
+        width: 25vw;
     }
     .brand_con ul li img{
         left:50%;
@@ -417,7 +429,7 @@
         font-size: calc(var(--body-fz)*1.32);
         color: var(--secondary-c);
     }
-    aside main{
+    aside section{
         margin-top: 108px;
         /* flex: 5; */
     }
@@ -452,7 +464,7 @@
     .toggle_menu > li ul{
         display: none;
     }
-    aside main a.aside_bottom{
+    aside section a.aside_bottom{
         position: absolute;
         bottom: 20px;
         left: 50%;
