@@ -398,9 +398,11 @@
         flex-direction:column;
         /* overflow-y: auto; */
         box-sizing: border-box;
+        transition: 0.2s ease-in;
     }
     aside.active {
         left: 0;
+        z-index: 1000;
     }
     aside header{
         display: flex;
@@ -425,10 +427,11 @@
         display: block;
         text-indent: -9999em;
     }
-    aside header button{
-        margin-right: 10px;
+    aside header .toggle_menu_btn{
+        margin-right: 23px;
         font-size: calc(var(--body-fz)*1.32);
         color: var(--secondary-c);
+        position: relative;
     }
     aside section{
         margin-top: 108px;
@@ -481,8 +484,14 @@
 }
 @media(max-width:694px){
     .brand_con ul li{
-        width: 43vw;
-        height: 25vw;
+        width: 49%;
+        height: 24vw;
+    }
+    .brand_con ul li:hover img{
+        bottom: 0;
+    }
+    .brand_con ul li div{
+        bottom: 10px;
     }
 }
 @media (max-width:494px){
@@ -528,10 +537,10 @@
     .brand_con ul{
         gap: 10px;
     }
-    /* .brand_con ul li{
-        width: 44vw;
-        height: 32vw;
-    } */
+    .brand_con ul li{
+        width: 36vw;
+        height: 21vw;
+    }
     /* SIGNUP */
     .signup_form,.signup .sub_tt:after{
         width: 90vw;

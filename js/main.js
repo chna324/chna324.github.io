@@ -123,7 +123,7 @@ $(function(){
     });
 
     //toggle menu
-    let toggleBtn = $('.aside_btn');
+    let toggleBtn = $('.toggle_menu_btn');
     toggleBtn.click(()=>{
         $('aside').toggleClass('active');
     });
