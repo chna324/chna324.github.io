@@ -80,6 +80,21 @@ $(function(){
         e.preventDefault();
         rndSlider.goToNextSlide();
     })
+    $(window).resize(function(){
+        if($(this).width() <= 746){
+            $('.rnd_slider').bxSlider({
+                pager:false,
+                controls:false,
+                speed:700,
+                auto:true,
+                minSlides:1,
+                maxSlides:1,
+                moveSlides:1
+            });
+        }else{
+            
+        };
+    });
     
     //비디오 모달
     let videoBtn = $('.video_icon'),
