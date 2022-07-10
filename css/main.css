@@ -628,3 +628,54 @@ aside{
 .newsnmedia_con.responsive_con{
     display: none;
 }
+
+/* popup modal */
+.popup{
+    position: fixed;
+    display: block;
+    background: rgba(255, 255, 255);
+    top: 20%;
+    left: 10%;
+    z-index: 100;
+    padding: 40px;
+    border: 3px solid var(--primary-c);
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px var(--body-tc);
+}
+.popup em{
+    font-weight: 700;
+    margin-right: 3px;
+}
+.popup_tt{
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.p_top{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid var(--secondary-c);
+}
+.p_day{
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--secondary-c);
+}
+.p_day a{
+    font-weight: 700;
+    color: var(--body-tc);
+}
+.p_day .name a{
+    font-weight: 400;
+    color: var(--primary-c);
+}
+#close{
+    position: absolute;
+    right: 40px;
+    bottom: 45px;
+}
+#close:hover{
+    color: var(--primary-c);
+}

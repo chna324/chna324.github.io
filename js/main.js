@@ -121,4 +121,58 @@ $(function(){
         $(this).toggleClass('active');
         $(this).siblings().removeClass('active');
     });
+
+    //쿠키 팝업 모달
+    let popup = document.querySelector('.popup'),
+        popupCheck = document.querySelector('#popup_close'),
+        popupClose = document.querySelector('#close');
+    
+    function setCookie(name, value, day){
+        let date = new Date();
+        date.setDate(date.getDate() + day);
+    
+        let cookieContent = '';
+        cookieContent += `${name}=${value};`;
+        cookieContent += `Expires=${date.toUTCString()}`;            
+    
+        document.cookie = cookieContent;
+    }
+
+    function getCookie(name){
+        let visited = false;
+        let cookies = document.cookie.split(';'); 
+    
+        for(let cookie of cookies){
+            if(cookie.indexOf(name) > -1){
+                visited = true;
+            }
+        }
+        if(visited){
+            popup.style.display = 'none'; 
+        }else{
+            popup.style.display = 'block'; 
+        }
+    }
+    getCookie('LG');
+
+    function delCookie(name,value){
+        let date = new Date();
+        date.setDate(date.getDate() - 1);
+    
+        let cookieContent = '';
+        cookieContent += `${name} = ${value};`;
+        cookieContent += `Expires = ${date.toUTCString()}`;            
+    
+        document.cookie = cookieContent;
+    }
+    
+    popupClose.addEventListener('click', ()=>{
+        popup.style.display = 'none';
+        if(popupCheck.checked){
+            setCookie('LG', 'Main Page', 1);
+        }else{
+            delCookie('LG', 'Main Page');
+        }
+    });
+
 });
