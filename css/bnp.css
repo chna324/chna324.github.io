@@ -100,7 +100,7 @@ aside{
 
 /* BnP */
 main{
-    padding-top: calc(var(--line-height)*4);
+    padding-top: calc(var(--line-height)*3);
 }
 .sub_page .sub_tt{
     margin-bottom: var(--line-height);

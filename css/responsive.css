@@ -302,6 +302,9 @@
     }
 }
 @media (max-width:800px){
+    .sub_tt{
+        font-size: calc(var(--body-fz)*1.125);
+    }
     .slide_container li .content{
         text-align: center;
         left: 50%;
@@ -446,6 +449,9 @@
     .fixed.service_btn img{
         margin-top: 10px;
     }
+    .bnp .sub_tt,.esg .sub_tt,.newsnmedia .responsive_tt{
+        width: 80vw;
+    }
 
     /* bnp page */
     .brand_con ul{
@@ -463,6 +469,9 @@
     .responsive_btn{
         display: block;
         margin-top: 10px;
+    }
+    .brand_con ul li div span{
+        display: none;
     }
 
     /* sign page */
