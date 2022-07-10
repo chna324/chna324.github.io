@@ -58,6 +58,11 @@ $(function(){
         autoSlide.goToNextSlide();
     });
     
+    //bnp 슬라이더
+    let bnpSlider = $('.bnp_slider').bxSlider({
+        
+    });
+
     //rnd 멀티플 슬라이더
     let rndSlider = $('.rnd_slider').bxSlider({
         pager:false,

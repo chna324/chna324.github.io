@@ -100,7 +100,7 @@ aside{
 
 /* login page */
 main{
-    padding-top: calc(var(--line-height)*4);
+    padding-top: calc(var(--line-height)*3);
 }
 .sub_page .login p{
     margin-bottom: var(--line-height);
