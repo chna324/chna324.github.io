@@ -21,6 +21,7 @@ $(function(){
     header.mouseover(function(){
         header.addClass('shrink');
     });
+    header.removeClass('shrink');
 
     //header submenu
     submenu.each(function(){
@@ -42,7 +43,8 @@ $(function(){
     let autoSlide = $('.auto_slider').bxSlider({
         pager:true,
         controls:false,
-        //speed:7000,
+        auto:true,
+        pause:7000,
         onSliderLoad:function(currentIndex){
 			$('.auto_slider li').eq(currentIndex+1).find('video').get(0).play();
 		},
@@ -59,7 +61,7 @@ $(function(){
 
     $('.main_slide .controls .prev').click(function(e){
         e.preventDefault();
-        autoSlide.goToNextSlide();
+        autoSlide.goToPrevSlide();
     });
 
     //rnd 멀티플 슬라이더
