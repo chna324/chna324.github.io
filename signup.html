@@ -51,9 +51,9 @@
                     <li>
                         <a href="brand_page.html">제품소개</a>
                         <ul class="submenu">
-                            <li><a href="">Beautiful</a></li>
-                            <li><a href="">Healthy</a></li>
-                            <li><a href="">Refreshing</a></li>
+                            <li><a href="brand_page.html" class="active">Beautiful</a></li>
+                            <li><a href="brand_page.html" class="active">Healthy</a></li>
+                            <li><a href="brand_page.html" class="active">Refreshing</a></li>
                         </ul>
                     </li>
                     <li>
@@ -90,8 +90,17 @@
                 <li class="web_link"><a href="login.html">로그인</a></li>
                 <li class="web_link"><a href="signup.html">회원가입</a></li>
                 <li class="mobile_icon"><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li class="search_ico"><a href="#search_tab"><i class="fa-solid fa-magnifying-glass"></i></a></li>
             </ul>
+            <div id="search_tab">
+                <form action="#" method="get">
+                    <input type="search" id="searchtab" name="searchtab" placeholder="검색어를 입력하세요.">
+                    <label for="searchtab" class="hidden">검색창</label>
+                    <button type="submit" value="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
         </div>
     </header>
     <aside>
