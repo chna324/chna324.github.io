@@ -33,7 +33,7 @@
     .sub_pd{
         padding:calc(var(--line-height)*2) 16px;
     }
-    .tab_menu ul{
+    .tab_menu div{
         gap: 26px;
     }
     .tab_menu .primary.btn{
@@ -629,7 +629,7 @@
 
 
     /* BNP */
-    .tab_menu ul{
+    .tab_menu div{
         gap: 10px;
     }
     .brand_con ul{

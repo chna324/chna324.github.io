@@ -118,7 +118,7 @@ main{
 .tab_menu{
     padding-top: var(--line-height);
 }
-.tab_menu ul{
+.tab_menu div{
     display: flex;
     justify-content: center;
     gap: 60px;
@@ -181,7 +181,7 @@ main{
     font-size: 27px;
     display: none;
 }
-.tab_menu ul button.active{
+.tab_menu div button.active{
     background: var(--primary-c);
     color: var(--white);
 }
