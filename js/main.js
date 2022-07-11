@@ -44,7 +44,6 @@ $(function(){
         pager:true,
         controls:false,
         auto:true,
-        pause:7000,
         onSliderLoad:function(currentIndex){
 			$('.auto_slider li').eq(currentIndex+1).find('video').get(0).play();
 		},
