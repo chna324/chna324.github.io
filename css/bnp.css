@@ -181,3 +181,7 @@ main{
     font-size: 27px;
     display: none;
 }
+.tab_menu ul button.active{
+    background: var(--primary-c);
+    color: var(--white);
+}

@@ -209,5 +209,4 @@ $(function(){
     $('.footer_link').find('img').mouseout(function(){
         $(this).attr('src','img/link_logo.png');
     });
-    
 });
