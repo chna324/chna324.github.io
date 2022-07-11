@@ -5,12 +5,13 @@
 header{
     position: fixed;
     z-index: 1000;
+    top: 0;
     left: 0;
     right:0;
     padding: 27px 0;
-    height: 54px;
-    transition: 0.3s ease-in;
+    height: 108px;
     overflow: hidden;
+    box-sizing: border-box;
 }
 header.shrink{
     background: var(--white);
@@ -21,7 +22,7 @@ header div{
     justify-content: space-between;
     align-items: center;
 }
-header nav{
+header nav{   
     line-height: 54px;
     display: flex;
     gap: 50px;
@@ -107,6 +108,7 @@ header.shrink .toggle_menu_btn{
 }
 aside{
     display: none;
+    visibility: hidden;
 }
 /* Main Slide */
 
@@ -576,7 +578,7 @@ aside{
     visibility: hidden;
     opacity: 0;
     transition:0.3s;
-    z-index: 100;
+    z-index: 10000;
 }
 .video.active{
     opacity: 1;
@@ -633,10 +635,10 @@ aside{
 .popup{
     position: fixed;
     display: block;
-    background: rgba(255, 255, 255);
+    background: var(--white);
     top: 20%;
     left: 10%;
-    z-index: 100;
+    z-index: 10000;
     padding: 40px;
     border: 3px solid var(--primary-c);
     border-radius: 20px;

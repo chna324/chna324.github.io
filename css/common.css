@@ -129,6 +129,9 @@ buttons
 .con_pd{
     padding: calc(var(--line-height)*3) 0;
 }
+.hidden{
+    display: none;
+}
 
 /* Footer */
 footer{
@@ -230,7 +233,7 @@ footer{
     width: 194px;
     height: 30px;
     border-radius: 3px;
-    background: #f2f2f2;
+    background: #e5e5e5;
     text-align: left;
     font-size: 14px;
     color: var(--body-tc);
@@ -242,15 +245,27 @@ footer{
     right: 10px; top: 50%;
     transform: translateY(-40%);
 }
+.family_list{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    visibility: hidden;
+}
+.family_list.active{
+    visibility: visible;
+}
 .family_list li{
     height: 30px;
-    background: var(--white);
+    background: #fafafa;
     font-size: 14px;
     padding-left: 10px;
-    display: none;
 }
 .family_list li a{
     color: var(--body-tc);
+}
+.family_list li a:hover{
+    text-decoration: underline;
 }
 
 /* BTN */
@@ -332,4 +347,43 @@ form button{
 /* Header */
 .main_menu li{
     width: 150px;
+}
+.main_menu li .submenu li a{
+    color: var(--secondary-c);
+}
+.main_menu li .submenu li a.active{
+    color: var(--body-tc);
+}
+
+/* search tab */
+#search_tab{
+    position: fixed;
+    left: 0; right: 0;bottom: 0;top: 0;
+    background: rgba(0,0,0,.8);
+    visibility: hidden;
+    justify-content: center;
+    opacity: 1;
+    transition:0.3s;
+    z-index: 10000;
+}
+#search_tab.active{
+    visibility: visible;
+}
+#search_tab form{
+    position: absolute;
+    top: 20%;
+}
+#search_tab form input{
+    width: 50vw;
+    border: none;
+    background: none;
+    border-bottom: 3px solid var(--white);
+    color: var(--white);
+    font-size: calc(var(--body-fz)*1.32);
+}
+#search_tab form button{
+    background: none;
+    width: unset;
+    position: absolute;
+    right: 0;
 }

@@ -18,6 +18,10 @@ $(function(){
         };
     });
 
+    header.mouseover(function(){
+        header.addClass('shrink');
+    });
+
     //header submenu
     submenu.each(function(){
         if($(this).outerHeight() > newHeight){
@@ -175,4 +179,33 @@ $(function(){
         }
     });
 
+    //패밀리사이트 버튼
+    let familyBtn = $('.familysite button'),
+        familySiteList = $('.family_list');
+    
+    familyBtn.click(function(e){
+        e.preventDefault();
+        familySiteList.toggleClass('active');
+    });
+
+    //검색창
+    let searchBtn = $('.search_ico'),
+        searchTab = $('#search_tab');
+    
+    searchBtn.click(function(e){
+        e.preventDefault();
+        searchTab.addClass('active');
+    });
+    searchTab.click(function(){
+        searchTab.removeClass('active');
+    });
+
+    //footer img 교체
+    $('.footer_link').find('img').mouseover(function(){
+        $(this).attr('src','img/logo_hover.png');
+    });
+    $('.footer_link').find('img').mouseout(function(){
+        $(this).attr('src','img/link_logo.png');
+    });
+    
 });

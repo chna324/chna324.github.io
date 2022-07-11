@@ -5,6 +5,10 @@
         padding: 0 16px;
         box-sizing: border-box;
     }
+    .bnp .product_list{
+        width: 96%;
+        margin: 0 auto;
+    }
     .esg_list{
         gap: 16px;
     }
@@ -62,11 +66,10 @@
 @media (max-width:1230px){
     header div{
         justify-content: flex-start;
-
     }
     header .top_links{
         position: absolute;
-        right: 10px;
+        right: 16px;
         cursor: pointer;
     }
     .top_links .mobile_icon{
@@ -88,6 +91,10 @@
     }
 }
 @media (max-width:1130px){
+    /* header{
+        padding: 16px 0;
+        height: 86px;
+    } */
     header nav{
         display: none;
     }
@@ -127,7 +134,8 @@
     }
     /* aside menu */
     aside{
-        display: block;
+        /* display: block; */
+        visibility: visible;
         position: fixed;
         width: 70%;
         left:-70%;
@@ -144,6 +152,7 @@
     aside.active {
         left: 0;
         z-index: 1000;
+        box-shadow: 1px 3px 3px rgba(0, 0, 0, .4);
     }
     aside.active header:after{
         opacity: 1;
@@ -301,7 +310,7 @@
         gap: 14px;
     }
 }
-@media (max-width:800px){
+@media (max-width:820px){
     .sub_tt{
         font-size: calc(var(--body-fz)*1.125);
     }
@@ -321,19 +330,18 @@
         width: 246px;
         height: 258px;
     }
-    .bnp .product_list li:after{
+    /*.bnp .product_list li:after{
         display: none;
     }
-    .bnp .product_list li span{
-        /* display: none; */
+     .bnp .product_list li span{
+        display: none;
         color: var(--body-tc);
         opacity: 1;
         bottom: 0;
-    }
+    } 
     .bnp .product_list li a{
         bottom: 80%;
-        display: none;
-    }
+    }*/
     .bnp .product_list li:hover img{
         transform: scale(1);
     }
@@ -346,20 +354,20 @@
         justify-content: normal;
         gap: 16px;
         align-items: center;
-        padding: calc(var(--line-height)*3) 16px 0;
+        padding: calc(var(--line-height)*3) 16px;
         flex-direction: row;
     }
     .rnd_text{
-        width:22%;
+        width:30%;
         align-items: flex-start;
     }
     .rnd_slide_wrapper{
         width: 71%;
         height: 78%;
     }
-    .rnd_slide_wrapper .rnd_slider div img{
+    /* .rnd_slide_wrapper .rnd_slider div img{
         height: 78%;
-    }
+    } */
     .rnd_slide_wrapper .rnd_slider div:before,.rnd_slide_wrapper .rnd_slider div a,.rnd_slide_wrapper .rnd_slider div:after, .rnd_text p.menu_txt{
         display: none;
     }
@@ -386,7 +394,7 @@
         position: absolute;
         top: 60px;
         right: 0;
-        gap: 46px;
+        gap: 100px;
     }
     .newsnmedia h3{
         text-align: center;
@@ -451,6 +459,7 @@
     }
     .bnp .sub_tt,.esg .sub_tt,.newsnmedia .responsive_tt{
         width: 80vw;
+        margin: 0 auto calc(var(--line-height)*1);
     }
 
     /* bnp page */
@@ -499,8 +508,33 @@
         line-height: var(--line-height);
         font-size: calc(var(--body-fz)*1.32);
     }
+    .sub_page .sub_tt:after{
+        width: 80vw;
+    }
 }
 @media (max-width:746px){
+    /* .bnp .product_list li span{
+        display: none;
+    } 
+    .bnp .product_list{
+        flex-wrap: wrap;
+    }*/
+    .bnp .product_list li:after{
+        display: block;
+    }
+    .bnp .product_list li a{
+        display: block;
+        bottom: 50%;
+    }
+    .bnp .product_list li span{
+        color: var(--white);
+        bottom: 50%;
+        opacity: 0;
+    }
+    .bnp .sub_tt{
+        width: 76vw;
+        margin: 0 auto calc(var(--line-height)*1);
+    }
     .esg_list li{
         width: 93vw;
         height: 40vw;
@@ -508,6 +542,31 @@
     }
 }
 @media(max-width:694px){
+    .con_pd{
+        padding: calc(var(--line-height)*2) 0;
+    }
+    .bnp .product_list{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        padding: unset;
+    }
+    .popup{
+        width: 80%;
+        top: 10%;
+        left:16px;
+        padding: 16px;
+    }
+    .popup_tt{
+        font-size: 16px;
+    }
+    .p_top, .p_day{
+        font-size: 12px;
+    }
+    #close{
+        right: 20px;
+        bottom: 23px;
+    } 
     .brand_con ul li{
         width: 49%;
         height: 24vw;
@@ -520,9 +579,9 @@
     }
 }
 @media (max-width:494px){
-    header{
+    /* header{
         padding: 16px 0;
-    }
+    } */
     .logo a{
         width: 46vw;
         height: 9vw;
@@ -541,31 +600,12 @@
     .slide_container li .content{
         top: 40%;
     }
-    .bnp .product_list{
-        flex-wrap: wrap;
-    }
-    .bnp .product_list li:after{
-        display: block;
-    }
-    .bnp .product_list li a{
-        display: block;
-        bottom: 50%;
-    }
-    .bnp .product_list li span{
-        color: var(--white);
-        bottom: 50%;
-        opacity: 0;
-    }
-    .bnp .sub_tt{
-        width: 76vw;
-        margin: 0 auto calc(var(--line-height)*2);
-    }
     .rnd{
         flex-direction: column;
     }
     .rnd_text .rnd_controls{
         right: inherit;
-        top: 203px;
+        top: 250px;
         left: 50%;
         transform: translateX(-50%);
         gap: 310px;
@@ -587,6 +627,7 @@
         width: 100%;
     }
 
+
     /* BNP */
     .tab_menu ul{
         gap: 10px;
@@ -599,6 +640,12 @@
         height: 21vw;
     }
     /* SIGNUP */
+    .login_find ul{
+        gap: 20px;
+    }
+    .login_find li:first-child:after{
+        left: 60px;
+    }
     .signup_form,.signup .sub_tt:after{
         width: 80vw;
     }
